@@ -1,0 +1,74 @@
+1. 
+
+2. 
+
+3. Procedure kataTerlarang
+
+n, i, j, k: integer
+w, larangkata, letter: string
+arrlarang: array[1] of string
+
+input(n)
+for (i = 0; i < n; i++)
+  input (larangkata)
+  arrlarang [i] = larangkata
+end for
+input(w)
+input(letter)
+for (j = 0; j < w.length; j++)
+  for (k = 0; k < arrlarang.length; k++)
+    if(w[j] == arrlarang[k])
+      output(letter)
+    else
+      output(w[j])
+    end if
+  end for
+end for
+
+
+4. Procedure menemukanNilaiVariabel
+
+a,b,c: integer
+
+input(a,b,c);
+
+if(a = 0)
+  a = b + c
+  output(a)
+else if(b = 0)
+  b = a + c
+  output(b)
+else if(c = 0)
+  c = a + b
+  output(c)
+end if
+
+
+5. Procedure temukanSemuaGrupAB
+
+n, berhenti, i, j : integer
+arrhasil : array[1...2] of integer
+
+
+input(N)
+
+if(N % 2 = 1)
+  output('Harus memasukkan bilangan genap')
+else
+  n = n * n
+  berhenti = n * 2
+  
+  i = 0
+  while i = 0 <= berhenti do
+    for(j = 1; j <= 2; j++)
+      if (j = 1)
+        arrhasil [j] = j
+      else 
+        arrhasil [j] = n
+        n--
+      end if      
+    i++
+  end while
+end if
+    
+
